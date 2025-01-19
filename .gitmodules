@@ -1,0 +1,6 @@
+[submodule "fedora-coreos-streams"]
+	path = builds/linux/fedora/coreos/streams
+	url = https://github.com/coreos/fedora-coreos-streams.git
+[submodule "builds/linux/fedora/coreos/streams"]
+	path = builds/linux/fedora/coreos/streams
+	url = https://github.com/coreos/fedora-coreos-streams.git

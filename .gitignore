@@ -1,0 +1,47 @@
+# MacOS
+## Ignore desktop services files.
+**/.DS_Store
+
+# Certificates and Keys
+## Ignore certificates files.
+**/*.cer
+**/*.crt
+**/*.p7b
+## Ignore public key files
+**/*.pub
+
+# HashiCorp Packer
+## Ignore cache directories.
+packer_cache/
+## Ignore crash log files.
+crash.log
+
+# Configurations
+## Ignore default config directory.
+config/
+## Ignore custom config directories that start with 'config-'.
+config-*/
+
+# Artifacts
+## Ignore artifacts directory.
+artifacts/**/*
+
+# ISO files
+## Ignore downloaded ISO files (and their checksum and log files)
+iso/**/*.iso
+iso/**/*.iso.lock
+iso/**/checksum
+download.log# Manifests
+
+## Ignore manifests directory.
+manifests/*.json
+manifests/*.json.lock
+
+# Python virtual environments
+## Ignore .venv and venv directories.
+.venv/
+venv/
+
+# Backup and temporary files
+**/*.bak
+**/*.tmp
