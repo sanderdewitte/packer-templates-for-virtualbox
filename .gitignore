@@ -15,6 +15,8 @@
 packer_cache/
 ## Ignore crash log files.
 crash.log
+## Ignore debug log files.
+packer-debug.log
 
 # Configurations
 ## Ignore default config directory.
