@@ -1,7 +1,5 @@
 # Packer templates for VitualBox
 
-[[_TOC_]]
-
 ## Introduction
 
 This repository automates the creation of reproducable and consistent virtual machine images for [Oracle VirtualBox][virtualbox] using [HashiCorp Packer][packer] and the [Packer Plugin for VirtualBox][packer-plugin-virtualbox] (and its `virtualbox-iso` [builder][packer-plugin-builder-virtualbox-iso]).
@@ -22,8 +20,9 @@ Go through the sections below:
 
 1. [Directory structure][directory_structure]
 2. [Requirements][requirements]
-3. [Config][config]
-4. [Build][build]
+3. [Transform][transform] (for Fedora CoreOS only) 
+4. [Config][config]
+5. [Build][build]
 
 [//]: Links
 [virtualbox]: https://www.virtualbox.org
@@ -34,5 +33,6 @@ Go through the sections below:
 [coreos]: https://fedoraproject.org/coreos/
 [directory_structure]: getting-started/directory_structure.md
 [requirements]: getting-started/requirements.md
+[tranform]: getting-started/transform.md
 [config]: getting-started/config.md
 [build]: getting-started/build.md
