@@ -80,16 +80,3 @@ packer validate \
   -var-file="config/vsphere.pkrvars.hcl" \
   builds/linux/rhel/9
 ```
-
-## Build with environmental variables
-
-You can set your environment variables if you would prefer not to save sensitive information in
-clear-text in files.
-
-You can add these to environmental variables using the `set-envvars.sh` script.
-
-```shell
-. ./set-envvars.sh
-```
-
-Note: you must run the script by sourcing it or use the shorthand "`.`".
