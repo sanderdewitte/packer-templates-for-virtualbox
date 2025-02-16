@@ -22,7 +22,7 @@ The project is tested/built on the following platforms:
 
 ### Packer CLI
 
-HashiCorp [Packer][packer-install] - 1.11 or later.
+HashiCorp [Packer][packer-install] - 1.12 or later.
 
 ### Plugins
 
@@ -34,7 +34,7 @@ these in same directory as your Packer executable `/usr/local/bin` or `$HOME/.pa
 | Plugin                                 | Version  | Description      | Resources                                                                                                               |
 | :---                                   | :---     | :---             | :---                                                                                                                    |
 | &nbsp;&nbsp; Packer Plugin for VMware  | >= 1.2.7 | By HashiCorp     | [Repo][packer-plugin-virtualbox-repo]  &nbsp;&nbsp; [Docs][packer-plugin-virtualbox-docs]  |
-| &nbsp;&nbsp; Packer Plugin for Git     | >= 0.6.2 | Community Plugin | [Repo][packer-plugin-git-repo]     &nbsp;&nbsp; [Docs][packer-plugin-git-docs]     |
+| &nbsp;&nbsp; Packer Plugin for Git     | >= 0.6.3 | Community Plugin | [Repo][packer-plugin-git-repo]     &nbsp;&nbsp; [Docs][packer-plugin-git-docs]     |
 
 ## Additional software packages
 
