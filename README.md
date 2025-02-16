@@ -1,7 +1,5 @@
 # Packer templates for VitualBox
 
-[[_TOC_]]
-
 ## Introduction
 
 This repository automates the creation of reproducable and consistent virtual machine images for [Oracle VirtualBox][virtualbox] using [HashiCorp Packer][packer] and the [Packer Plugin for VirtualBox][packer-plugin-virtualbox] (and its `virtualbox-iso` [builder][packer-plugin-builder-virtualbox-iso]).
@@ -14,7 +12,7 @@ This project supports the following guest operating systems:
 
 | Operating System             | Version   |
 | :---                         | :---      |
-| [Fedora CoreOS][coreos]      | 41        |
+| [Fedora CoreOS][coreos]      |  Based on streams submodule |
 
 ## Documentation
 
