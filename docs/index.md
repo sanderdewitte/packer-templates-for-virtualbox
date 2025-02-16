@@ -12,7 +12,7 @@ This project supports the following guest operating systems:
 
 | Operating System             | Version   |
 | :---                         | :---      |
-| [Fedora CoreOS][coreos]      | 41        |
+| [Fedora CoreOS][coreos]      | Based on streams submodule |
 
 ## Getting started
 
