@@ -1,7 +1,5 @@
 # Contributing guidelines
 
-[[_TOC_]]
-
 ## Introduction
 
 Thank you for your interest in contributing to this project. Whether it's a bug report, new feature,
