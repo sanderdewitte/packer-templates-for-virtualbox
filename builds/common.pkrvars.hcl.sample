@@ -1,0 +1,18 @@
+/*
+    DESCRIPTION:
+    Common variables used for all builds.
+    - Variables are use by the source blocks.
+*/
+
+// Removable Media and ISO Settings
+common_iso_base_path = "iso"
+
+// Boot and Provisioning Settings
+common_data_source         = "http"
+common_http_port_min       = 8000
+common_http_port_max       = 8099
+common_shutdown_timeout    = "5m"
+
+// Run Settings
+common_headless         = true
+common_output_base_path = "artifacts"

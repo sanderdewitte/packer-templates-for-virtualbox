@@ -1,0 +1,32 @@
+/*
+    DESCRIPTION:
+    Fedora CoreOS variables used by the Packer Plugin for Oracle VirtualBox (virtualbox-iso).
+*/
+
+// Version
+version = "0.0.1"
+
+// Guest Operating System setting
+vm_guest_os_type         = "Linux_64"
+vm_guest_os_family       = "linux"
+vm_guest_os_name         = "fcos"
+vm_guest_os_architecture = "x86_64"
+
+// Virtual hardware settings
+vm_cpu_count = 2
+vm_mem_size  = 2048
+vm_disk_size = 10240
+
+// Removable Media and ISO settings
+iso_datastore_stream = "stable"
+
+// Boot settings
+vm_boot_firmware = "efi"
+vm_boot_wait     = "3s"
+
+// Communicator settings
+communicator_port    = 22
+communicator_timeout = "40m"
+
+// Ignition
+ignition_url = "https://raw.githubusercontent.com/iquiw/packer-fedora-coreos/master/ignition.cfg"

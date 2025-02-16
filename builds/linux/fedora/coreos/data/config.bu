@@ -1,0 +1,72 @@
+variant: fcos
+version: 1.6.0
+storage:
+  files:
+    - path: /etc/fstab
+      contents:
+        inline: ""
+      mode: 0420
+      user:
+        id: 0
+      group:
+        id: 0
+    - path: /etc/sysctl.d/60-kernel-hardening.conf
+      contents:
+        inline: "kernel.kptr_restrict = 1"
+      mode: 0644
+      user:
+        id: 0
+      group:
+        id: 0
+    - path: /etc/sysctl.d/70-magic-sysrq.conf
+      contents:
+        inline: "kernel.sysrq = 0"
+      mode: 0644
+      user:
+        id: 0
+      group:
+        id: 0
+    - path: /etc/sysctl.d/80-console-messages.conf
+      contents:
+        inline: "kernel.printk = 4 4 1 7"
+      mode: 0644
+      user:
+        id: 0
+      group:
+        id: 0
+    - path: /etc/zincati/config.d/51-rollout_wariness.toml
+      mode: 0644
+      user:
+        id: 0
+      group:
+        id: 0
+      contents:
+        inline: |
+          [identity]
+          rollout_wariness = 0.5
+    - path: /etc/zincati/config.d/55-updates-strategy.toml
+      mode: 0644
+      user:
+        id: 0
+      group:
+        id: 0
+      contents:
+        inline: |
+          [updates]
+          strategy = "periodic"
+
+          [updates.periodic]
+          interval = "24h"
+passwd:
+  users:
+    - name: ${build_username}
+      password_hash: ${build_password_encrypted}
+      ssh_authorized_keys:
+        - ${build_public_key}
+        - ${build_public_key_additional}
+      groups:
+        - wheel
+        - sudo
+        - systemd-journal
+        - docker
+      system: true

@@ -1,0 +1,8 @@
+/*
+    DESCRIPTION:
+    Storage variables used for Linux builds.
+    - Variables are passed to and used by guest operating system configuration files (e.g., ks.cfg).
+*/
+
+// VM storage settings
+vm_disk_devices = "sda"

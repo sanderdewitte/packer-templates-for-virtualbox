@@ -33,7 +33,7 @@ artifacts/**/*
 iso/**/*.iso
 iso/**/*.iso.lock
 iso/**/checksum
-download.log# Manifests
+download.log
 
 ## Ignore manifests directory.
 manifests/*.json
