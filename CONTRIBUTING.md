@@ -3,7 +3,7 @@
 ## Introduction
 
 Thank you for your interest in contributing to this project. Whether it's a bug report, new feature,
-correction or additional documentation, we greatly value feedback and contributions.
+correction or additional documentation, I greatly value feedback and contributions.
 
 Please read through this document before submitting any issues or pull requests to ensure
 all the necessary information is included to effectively respond to the bug report or contribution.
