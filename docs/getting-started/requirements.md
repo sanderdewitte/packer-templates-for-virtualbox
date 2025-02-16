@@ -33,7 +33,7 @@ these in same directory as your Packer executable `/usr/local/bin` or `$HOME/.pa
 
 | Plugin                                 | Version  | Description      | Resources                                                                                                               |
 | :---                                   | :---     | :---             | :---                                                                                                                    |
-| &nbsp;&nbsp; Packer Plugin for VMware  | >= 1.2.7 | By HashiCorp     | [Repo][packer-plugin-virtualbox-repo]  &nbsp;&nbsp; [Docs][packer-plugin-virtualbox-docs]  |
+| &nbsp;&nbsp; Packer Plugin for Virtualbox  | >= 1.0.0 | By HashiCorp     | [Repo][packer-plugin-virtualbox-repo]  &nbsp;&nbsp; [Docs][packer-plugin-virtualbox-docs]  |
 | &nbsp;&nbsp; Packer Plugin for Git     | >= 0.6.3 | Community Plugin | [Repo][packer-plugin-git-repo]     &nbsp;&nbsp; [Docs][packer-plugin-git-docs]     |
 
 ## Additional software packages
