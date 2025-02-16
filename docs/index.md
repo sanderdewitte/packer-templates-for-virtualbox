@@ -33,6 +33,6 @@ Go through the sections below:
 [coreos]: https://fedoraproject.org/coreos/
 [directory_structure]: getting-started/directory_structure.md
 [requirements]: getting-started/requirements.md
-[tranform]: getting-started/transform.md
+[transform]: getting-started/transform.md
 [config]: getting-started/config.md
 [build]: getting-started/build.md
