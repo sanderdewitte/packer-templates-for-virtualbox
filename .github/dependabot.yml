@@ -9,5 +9,6 @@ updates:
     labels:
       - "submodule"
       - "dependencies"
+      - "automerge"
     assignees:
       - sanderdewitte
