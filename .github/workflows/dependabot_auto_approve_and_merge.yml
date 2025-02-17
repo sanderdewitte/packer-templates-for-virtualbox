@@ -21,7 +21,7 @@ jobs:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Enable auto-merge for Fedora CoreOS Streams submodule updates
-        if: contains(steps.metadata.outputs.dependency-names, 'fedora-coreos-streams') && contains(steps.metadata.outputs.source-branch, 'main') && contains(github.event.pull_request.labels.*.name, 'submodule')
+        if: contains(steps.metadata.outputs.dependency-names, 'fedora/coreos/streams') && contains(steps.metadata.outputs.target-branch, 'main') && contains(github.event.pull_request.labels.*.name, 'submodule')
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
