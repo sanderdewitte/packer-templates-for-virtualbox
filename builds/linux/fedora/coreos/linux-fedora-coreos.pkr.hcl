@@ -27,7 +27,7 @@ packer {
 //  BLOCK: data
 //  Defines data sources.
 
-//data "git-repository" "cwd" {}
+data "git-repository" "cwd" {}
 
 //  BLOCK: locals
 //  Defines local variables
