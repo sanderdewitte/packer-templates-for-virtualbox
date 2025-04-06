@@ -1,0 +1,519 @@
+releases:
+  41.20250105.2.0:
+    issues: []
+  41.20241215.2.0:
+    issues:
+      - text: "change coreos dracut configs file name convention"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1837"
+      - text: "heavy nfs activity causes kernel soft lockup"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1841"
+  41.20241122.2.0:
+    issues: []
+  41.20241109.2.0:
+    issues:
+      - text: "aarch64: upgrade causes SELinux mislabeled dtb files in /boot/ostree"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1808"
+      - text: "firewall features not working in kernel 6.11.5"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1834"
+  41.20241027.2.0:
+    issues:
+      - text: "Rebase onto Fedora 41"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1695"
+      - text: "Complete composefs integration in Fedora CoreOS"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1718"
+      - text: "gcp: support c3 metal instance types"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1794"
+      - text: "ship podman 5.2.5 for CVE-2024-9675, CVE-2024-9676"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1821"
+      - text: "hanging `journalctl --list-boots` stops boot"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1641"
+      - text: "dropping some firmware packages that provide Wi-Fi firmware"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1575"
+      - text: "systemd v256: nodes utilizing cgroups v1 will fail to boot"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1715#issuecomment-2331986149"
+      - text: "Crash on IDPF (new Intel driver)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1797"
+      - text: "updates alternatives don't work"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/677"
+  40.20241019.2.0:
+    issues: []
+  40.20241006.2.1:
+    issues:
+      - text: "`/boot/efi` is `unlabeled_t` since version 40.20240504.3.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1771"
+      - text: "`/sysroot` dir and subfiles are `unlabeled_t` since version 40.20240504.3.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1772"
+      - text: "`coreos-boot-edit.sh` creates `/boot/.root_uuid` as `unlabeled_t`"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1770"
+      - text: "ship podman 5.2.4 for CVE-2024-9407, CVE-2024-9341"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1809"
+  40.20240920.2.0:
+    issues: []
+  40.20240906.2.0:
+    issues:
+      - text: "New Package Request: pciutils"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1778"
+  40.20240825.2.0:
+    issues: []
+  40.20240808.2.0:
+    issues: []
+  40.20240728.2.1:
+    issues: []
+  40.20240709.2.0:
+    issues:
+      - text: "No serial console login after update to 40.20240616.3.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1758"
+  40.20240701.2.0:
+    issues:
+      - text: "CVE-2024-6387: OpenSSH 9.8: regreSSHion: RCE in OpenSSH's server, on glibc-based Linux systems"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1754"
+      - text: "Trigger a bootupd update before landing latest 6.9 kernel update in Fedora CoreOS"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1752"
+      - text: "qed firmware missing from 40.20240519.3.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1746"
+      - text: "aleph file extra attributes gives bootupctl status error"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1724"
+      - text: "LUKS on 512e disk breaks ignition-ostree-growfs.service"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1384"
+  40.20240616.2.0:
+    issues:
+      - text: "Failed unit: rpm-ostree-fix-shadow-mode.service"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1722"
+  40.20240602.2.0:
+    issues: []
+  40.20240519.2.0:
+    issues: []
+  40.20240504.2.0:
+    issues:
+      - text: "Switch to using OSBuild for most CoreOS boot image building"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1653"
+  40.20240416.2.0:
+    issues:
+      - text: "Rebase onto Fedora 40"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1674"
+      - text: "Fedora 40 Changes: Podman v5"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1629"
+      - text: "Fedora 40 Changes: Enable IPv4 Address Conflict Detection by default"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1656"
+      - text: "Fedora 40 Changes: Assign individual, stable MAC addresses for Wi-Fi connections"
+        url: "https://fedoraproject.org/wiki/Changes/StableSSIDMACAddress"
+      - text: "glibc CVE-2024-2961 out of bounds write in iconv may lead to remote code execution"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1711"
+  39.20240407.2.0:
+    issues:
+      - text: "Fix rpm-ostree CVE-2024-2905 (world-readable /etc/[g]shadow[-])"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1705"
+  39.20240322.2.0:
+    issues:
+      - text: "SELinux causes layered buildah network namespace failures"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1703"
+  39.20240309.2.0:
+    issues: []
+  39.20240225.2.0:
+    issues: []
+  39.20240210.2.0:
+    issues: []
+  39.20240128.2.2:
+    issues:
+      - text: "runc CVE-2024-21626 container breakouts from leaked fds"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1664"
+      - text: "glibc CVE-2023-6779 heap-based buffer overflow"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1663"
+  39.20240128.2.0:
+    issues: []
+  39.20240112.2.0:
+    issues:
+      - text: "aws: publish to the ca-west-1 region"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1649"
+  39.20240104.2.0:
+    issues:
+      - text: "aarch64 failing to upgrade with /boot filesystem full"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1637"
+  39.20231204.2.1:
+    issues:
+      - text: "Add Platform: Native Apple Hypervisor"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1548"
+  39.20231119.2.0:
+    issues:
+      - text: "Support root on iSCSI (non-HBA)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1590"
+      - text: "New Package Request: crun-wasm and wasmedge-rt"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1375"
+  39.20231101.2.1:
+    issues:
+      - text: "Zincati fails to update nodes: Too many open files"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1608"
+  39.20231101.2.0:
+    issues:
+      - text: "Rebase onto Fedora 39"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1490"
+      - text: "'Protocol not supported' on mounting NFS v4.1 mounts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1601"
+      - text: "Updates to AWS EC2 AMI defaults"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1502"
+      - text: "New Package Request: bash-color-prompt"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1567"
+      - text: "Ship moby-engine 24.0.x"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1476"
+      - text: "Add back Qualcomm DTBs on aarch64"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1467"
+      - text: "Retire Modularity"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1513"
+      - text: "New Package Request: gvisor-tap-vsock-gvforwarder"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1557"
+      - text: "New Package Request: audit"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1362"
+      - text: "Enable fwupd-refresh.timer by default on IoT, CoreOS & Server editions"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1512"
+  38.20231027.2.0:
+    issues: []
+  38.20231014.2.0:
+    issues:
+      - text: "CVE-2023-38545: SOCKS5 heap buffer overflow in libcurl"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1593"
+  38.20231002.2.2:
+    issues:
+      - text: "CVE-2023-4911: Buffer overflow in glibc leading to privilege escalation"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1591"
+  38.20230918.2.0:
+    issues:
+      - text: "New Package Request: gvisor-tap-vsock-gvforwarder"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1557"
+  38.20230902.2.1:
+    issues:
+      - text: "TPM not found on some hardware with kernel 6.4.11"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1555"
+  38.20230902.2.0:
+    issues:
+      - text: "Add an LVM devices file by default"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1517"
+  38.20230819.2.0:
+    issues:
+      - text: "Support booting ISO completely from RAM"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1552"
+  38.20230806.2.0:
+    issues:
+      - text: "Platform Request: Microsoft Hyper-V"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1411"
+      - text: "Rootless containers cannot be started: RLIMIT_NPROC error"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1507"
+  38.20230722.2.1:
+    issues: []
+  38.20230709.2.0:
+    issues:
+      - text: "Random hangs of booted qemu machines"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1511"
+      - text: "CIFS DFS Mounts Failing on F38 due to SELinux denials"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1447"
+  38.20230625.2.0:
+    issues:
+      - text: "GCP: add aarch64 image"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1377"
+  38.20230609.2.1:
+    issues:
+      - text: "Produce official ppc64le architecture artifacts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/987"
+      - text: "New Package Request: google-compute-engine-guest-configs-udev"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1494"
+      - text: "umount failures from udev-worker process in Fedora 38+"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1475"
+  38.20230527.2.0:
+    issues:
+      - text: "New Package Request: passt"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1436"
+      - text: "New Package Request: ipcalc"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1460"
+  38.20230514.2.0:
+    issues:
+      - text: "Platform Request: kubevirt"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1126"
+      - text: "Forwarding NIC renaming udev rules from the initramfs"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/553"
+  38.20230430.2.1:
+    issues:
+      - text: "Ship podman 4.5.x in Fedora CoreOS"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1471"
+      - text: "SELinux is preventing hardware initiated reboot on Azure"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1412"
+  38.20230414.2.1:
+    issues:
+      - text: "Proxied update connections are broken in F38"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1477"
+      - text: "37->38 upgrade after previous rollback yields loss of SSH access"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1473"
+  38.20230414.2.0:
+    issues:
+      - text: "Rebase onto Fedora 38"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1356"
+      - text: "Set MACAddressPolicy=none for bridges/bonds/teams"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/919"
+      - text: "systemd-tmpfiles-setup not running after switch root on s390x"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1215"
+      - text: "systemd-sysusers reporting it is creating root group with GID 999 in initramfs"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1297"
+      - text: "Delete Qualcomm DTBs to free up space on aarch64"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1464"
+      - text: "podman uses incorrect mapping for idmapped mounts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1455"
+      - text: "CoreOS autoinstall creates huge number of XFS allocation groups"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1183"
+  37.20230401.2.0:
+    issues:
+      - text: "Kata containers overlay fails due to conflicting dracut configuration"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1450"
+      - text: "Platform chrony configuration intolerant of user modified config"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1449"
+      - text: "Use ptp_kvm as an NTP time source on qemu when available"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1433"
+  37.20230322.2.0:
+    issues:
+      - text: "Old bootloader versions don't boot new aarch64 6.2+ kernels"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1441"
+      - text: "New Package Request: nmstate"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1175"
+  37.20230303.2.0:
+    issues:
+      - text: "Live environment only allocates 20% of RAM for ephemeral /var"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1344"
+      - text: "PXE provisioning has no network without ignition.firstboot karg"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1423"
+      - text: "Include necessary tpm2_createpolicy module in the initramfs"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1255"
+      - text: "Allow configuring LUKS volumes with discard option"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1392"
+  37.20230218.2.0:
+    issues:
+      - text: "Include new podman with quadlet functionality"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/998"
+  37.20230205.2.0:
+    issues: []
+  37.20230122.2.0:
+    issues:
+      - text: "qemu-x86_64-static cannot run el9 binaries"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1389"
+      - text: "NetworkManager inappropriately configures the SR-IOV interface on Azure"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1383"
+      - text: "fix ceph errors on the 6.0 kernel"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1393"
+  37.20230110.2.0:
+    issues:
+      - text: "Linux v6.0.16 breaks CIFS mounts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1379"
+  37.20230107.2.0:
+    issues:
+      - text: "Add back in criu-libs package"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1370"
+      - text: "Fix k8s containers secret access being blocked by SELinux"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1366"
+      - text: "Fix SELinux denial preventing start of systemd-timesyncd"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1359"
+  37.20221225.2.2:
+    issues:
+      - text: "Kubernetes containers secret access blocked by SELinux"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1366"
+  37.20221225.2.1:
+    issues: []
+  37.20221211.2.0:
+    issues:
+      - text: "Drop setgid file /usr/bin/dotlockfile on s390x"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1253"
+      - text: "Add support for running with SEV on GCP"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1202"
+  37.20221127.2.0:
+    issues:
+      - text: "remove console=ttyS0 on metal"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/567"
+      - text: "include crun 1.7"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1354"
+      - text: "amd-gpu-firmware no longer being installed between stable to testing"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1345"
+  37.20221106.2.1:
+    issues:
+      - text: "tracker: Rebase onto Fedora 37"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1223"
+      - text: "shell: /etc/locale.conf is missing, the default POSIX has no UTF-8 support"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/568"
+      - text: "coordinating default hostname with other Fedora editions"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/902"
+  36.20221030.2.3:
+    issues:
+      - text: "libxml2 update to 2.10.3 breaks ABI by removing 111 symbols"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1336"
+  36.20221030.2.1:
+    issues:
+      - text: "Non-default OSTree deployments accessible without GRUB password (CVE-2022-3675)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1333"
+      - text: "New release including Podman 4.3.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1327"
+      - text: "Update hardware version in VMware OVA after 6.5/6.7 EOL date"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1141"
+      - text: "systemctl daemon-reload interferes with docker's access to /dev/pts/0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1321"
+  36.20221014.2.1:
+    issues:
+      - text: "Update OpenSSL for CVE-2022-3786 and CVE-2022-3602"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1329"
+  36.20221014.2.0:
+    issues: []
+  36.20221001.2.0:
+    issues:
+      - text: "F36 VM fails to display the network device information on console"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1153"
+  36.20220918.2.2:
+    issues:
+      - text: "Push OSTree Native Container to quay.io/fedora/fedora-coreos"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1171"
+      - text: "AMI images description field stopped being populated"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1300"
+      - text: "kola: 36.20220906.20.0: mm/page_alloc.c kernel warning on aarch64/openstack for 5.19 kernels"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1292"
+  36.20220906.2.0:
+    issues: []
+  36.20220820.2.0:
+    issues:
+      - text: "podman: Invalid cross-device link with named volume"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1168"
+  36.20220806.2.0:
+    issues: []
+  36.20220723.2.2:
+    issues:
+      - text: "Support GRUB bootloader password"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/134"
+  36.20220716.2.0:
+    issues:
+      - text: "Lower kernel printk level after boot"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1244"
+      - text: "New Package Request: zstd"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1251"
+  36.20220703.2.1:
+    issues:
+      - text: "Remove fedora-coreos-pinger"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/770"
+      - text: "New Package Request: qemu-user-static"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1088"
+  36.20220618.2.0:
+    issues:
+      - text: "Produce official s390x artifacts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1085"
+  36.20220605.2.0:
+    issues:
+      - text: "console defaults for x86_64 qemu platform"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/954"
+      - text: "SELinux prevents usage of NetworkManager dispatcher scripts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1218"
+  36.20220522.2.1:
+    issues:
+      - text: "Can't disable docker.socket with Ignition"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/229"
+      - text: "Unable to disable zincati.service using Ignition"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/392"
+      - text: "containerd: SElinux Relabelling broken for Kubernetes volume mounts"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1138"
+      - text: "clhm: undesirable ignition warning being presented to user"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1159"
+      - text: "[OKD 4.10] CephFS seems to be broken with FCOS 35 upgrade. image registry writes fail."
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1167"
+      - text: "use internal qcow2 compression for nutanix image"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1191"
+  36.20220505.2.0:
+    issues:
+      - text: "Actually move iptables to the nft backend"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/676"
+      - text: "kdump: save vmcore failed after trigger crash when enable kdump via ignition"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1079"
+      - text: "kola: 35.20220216.10.0: non-exclusive-test VM has journal failures"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1108"
+      - text: "Drop libvarlink-util from package set"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1130"
+  35.20220424.2.0:
+    issues:
+      - text: "Large and growing PXE RAM requirement"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1055"
+      - text: "Encrypted docker overlay network breaks on update to 35.20220116.3.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1111"
+      - text: "rebasing to another stream fails when deployment is staged"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1150"
+  35.20220410.2.1:
+    issues:
+      - text: "Use MOTD to display Ignition warnings on the console"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1125"
+  35.20220327.2.0:
+    issues:
+      - text: "rdcore bind-boot fails with \"Error: Expected one vendor dir\""
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1116"
+      - text: "20220227.2.1 breaks NFS mount for QNAP servers (kernel 5.16.x)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1121"
+      - text: "Update the VMware OVA to use UEFI/SecureBoot by default, change OS type to fedora64Guest"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1140"
+  35.20220313.2.0:
+    issues:
+      - text: "rpm-ostree startup delays because of GPG key loading"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/761"
+      - text: "rawhide: aarch64: 20210827: ostree.hotfix test failing"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/942"
+      - text: "networking: consider the effects of BOOTIF kernel argument on nm-initrd-generator"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1048"
+  35.20220227.2.1:
+    issues:
+      - text: "CVE-2022-0847 (The Dirty Pipe Vulnerability)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1118"
+  35.20220227.2.0:
+    issues: []
+  35.20220213.2.0:
+    issues:
+      - text: "Create /dev/disk/* symlink to boot disk, for use by Ignition config"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/759"
+      - text: "Handle re-invocations of coreos-installer on a new disk"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/976"
+  35.20220131.2.0:
+    issues:
+      - text: "New Package Request: nano (and explicit choice for default editor)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1058"
+  35.20220116.2.1:
+    issues:
+      - text: "CVE-2021-4034 (polkit) & CVE-2021-45469 (kernel)"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1078"
+  35.20220116.2.0:
+    issues: []
+  35.20220103.2.1:
+    issues:
+      - text: "AWS m4.large instances fail to boot starting with 35.20211226.20.0"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1066"
+  35.20220103.2.0:
+    issues:
+      - text: "RFE: generate chrony configuration on AzureStack"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1053"
+  35.20211215.2.0:
+    issues:
+      - text: "Support firstboot networking configuration in `/etc/coreos-firstboot-network`"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/841"
+      - text: "m6i instances fail to boot - kernel crashlooping"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1004"
+      - text: "RFE: use ptp_hyperv hardware clock on Azure"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1031"
+      - text: "Ignition's \"wrote ssh authorized keys file\" report accumulates in `/etc/issue`"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1033"
+  35.20211203.2.1:
+    issues:
+      - text: "\"Ignition previously ran\" warning when reprovisioning using a non-CoreOS live system"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/977"
+      - text: "Platform Request: Nutanix AOS with AHV"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1007"
+  35.20211119.2.0:
+    issues:
+      - text: "Support converting the live ISO into a minimal live ISO"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/868"
+      - text: "Ignition kargs helper should succeed on live systems if kargs are already correct"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/917"
+  35.20211029.2.0:
+    issues:
+      - text: "Rebased to Fedora 35"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/884"
+      - text: "NetworkManager and UDEV race condition"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/929"
+      - text: "Incorrect mode (SGID bit set) for directories created via overlay.d in fedora-coreos-config"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/1003"
+  34.20211031.2.0:
+    issues:
+      - text: "initrd: nm-initrd.service fails to spawn depending on console setup"
+        url: "https://github.com/coreos/fedora-coreos-tracker/issues/943"
