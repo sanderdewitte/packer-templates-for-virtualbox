@@ -1,6 +1,6 @@
 /*
     DESCRIPTION:
-    Fedora CoreOS 41 template using the Packer Builder for VirtualBox (virtualbox-iso).
+    Fedora CoreOS template using the Packer Builder for VirtualBox (virtualbox-iso).
 */
 
 //  BLOCK: packer
@@ -19,7 +19,7 @@ packer {
     }
     git = {
       source  = "github.com/ethanmdavidson/git"
-      version = ">= 0.6.3"
+      version = "~> 0.6"
     }
   }
 }
