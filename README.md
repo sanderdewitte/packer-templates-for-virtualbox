@@ -1,4 +1,4 @@
-# Packer templates for VitualBox
+# Packer templates for VirtualBox
 
 ## Introduction
 
