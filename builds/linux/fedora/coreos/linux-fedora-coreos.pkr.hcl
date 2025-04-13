@@ -169,7 +169,7 @@ build {
     expect_disconnect = true
     inline = [
       "echo 'Applying latest updates...'",
-      "sudo rpm-ostree upgrade | grep -v -e '^Upgraded:$' -e '\\s\\+->\\s\\+'",
+      "sudo systemctl is-system-running --wait --quiet && sudo rpm-ostree upgrade | grep -v -e '^Upgraded:$' -e '\\s\\+->\\s\\+'",
       "sudo systemctl reboot"
     ]
   }
