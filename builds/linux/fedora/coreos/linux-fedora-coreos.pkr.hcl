@@ -57,7 +57,7 @@ locals {
   data_source_command_reverse_boot_order = "efibootmgr | grep BootOrder | awk -F' ' '{print $2}' | awk -F',' '{for(i=NF; i>0; i--) printf \"%s%s\", $i, (i>1?\",\":\"\\n\")}' | xargs -I{} efibootmgr -o {} >/dev/null 2>&1"
   data_source_command_reboot             = "systemctl reboot"
   data_source_content                    = {
-    "/config.ign" = templatefile("${abspath(path.root)}/data/config.ign.pkrtpl.hcl", {
+    "/config.ign" = templatefile("${abspath(path.root)}/data/${var.ignition_template}", {
       build_username              = var.build_username
       build_password_encrypted    = var.build_password_encrypted
       build_public_key            = var.build_public_key
