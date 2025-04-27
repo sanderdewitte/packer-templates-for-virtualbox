@@ -48,7 +48,7 @@ venv/
 **/*.bak
 **/*.tmp
 
-## Ignore all files in specific builds/**/data directories except those matching a pattern
+# Ignore all files in specific builds/**/data directories except those matching a pattern
 ## Ignore files in
 builds/linux/fedora/coreos/data/**
 ## Exceptions 
