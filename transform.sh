@@ -3,9 +3,22 @@
 # Define paths
 BASE_DIR=$(dirname "$0")
 COREOS_DATA_PATH="builds/linux/fedora/coreos/data"
-BUTANE_FILE="${COREOS_DATA_PATH}/config.bu"
-IGN_FILE="${COREOS_DATA_PATH}/config.ign"
-TEMPLATE_FILE="${COREOS_DATA_PATH}/config.ign.pkrtpl.hcl"
+
+# Check if data path exists
+if [ ! -d "$COREOS_DATA_PATH" ]; then
+  echo "Error: CoreOS data path does not exist: $COREOS_DATA_PATH" >&2
+  exit 1
+fi
+
+# Define default filenames (overridable by environment variables) 
+BUTANE_FILENAME="${BUTANE_FILENAME:-config.bu}"
+IGN_FILENAME="${IGN_FILENAME:-config.ign}"
+TEMPLATE_FILENAME="${TEMPLATE_FILENAME:-config.ign.pkrtpl.hcl}"
+
+# Define full file paths
+BUTANE_FILE="${COREOS_DATA_PATH}/${BUTANE_FILENAME}"
+IGN_FILE="${COREOS_DATA_PATH}/${IGN_FILENAME}"
+TEMPLATE_FILE="${COREOS_DATA_PATH}/${TEMPLATE_FILENAME}"
 
 # Ensure Butane file exists
 if [ ! -f "$BASE_DIR/$BUTANE_FILE" ]; then
