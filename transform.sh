@@ -16,7 +16,7 @@ fi
 # Define whether to overwrite existing Ignition file (default is 'true')
 : "${OVERWRITE:=true}"
 if [ "$OVERWRITE" != true ] && [ "$OVERWRITE" != false ]; then
-  echo "Error: OVERWRITE must be 'true' or 'false', case-sensitive (current value: '$OVERWRITE')." >&2
+  echo "Error: Invalid OVERWRITE value '$OVERWRITE'. Expected 'true' or 'false', case-sensitive." >&2
   exit 1
 fi
 
