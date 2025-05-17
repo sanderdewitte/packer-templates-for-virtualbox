@@ -119,7 +119,7 @@ source "virtualbox-iso" "linux-fedora-coreos" {
     "${local.data_source_command}",
     "<down><end><wait>",
     "<leftCtrlOn>x<leftCtrlOff>",
-    "<wait70>",
+    "<wait210>",
     "<enter><wait>",
     "${local.data_source_command_reverse_boot_order}",
     "<enter><wait>",
