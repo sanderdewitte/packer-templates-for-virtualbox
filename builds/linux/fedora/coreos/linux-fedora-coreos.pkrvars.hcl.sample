@@ -29,4 +29,4 @@ communicator_port    = 22
 communicator_timeout = "40m"
 
 // Ignition
-ignition_url = "https://raw.githubusercontent.com/iquiw/packer-fedora-coreos/master/ignition.cfg"
+ignition_url = "https://raw.githubusercontent.com/sanderdewitte/packer-templates-for-virtualbox/main/builds/linux/fedora/coreos/data/config.ign"
